@@ -13,7 +13,8 @@ author:
   name: Sathish
   twitter: sathishmanohar
   bio: Co-founder Invoice Jet and Work Life
-  image: ks.png
+  image: sathish.png
+
 ---
 Recently major websites like reddit and wikipedia, decided to go black in protest of SOPA. This is when a Googler joined the conversation and instructed sites to go black the right way. In short [Pierre Far][1] instructed sites to return &#8220;503 Service Unavailable&#8221; Status code, to show bots, that the website in question was taken down, intentionally and temporarily.
 

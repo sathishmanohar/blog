@@ -15,7 +15,8 @@ author:
   twitter: sathishmanohar
   gplus: 100687498195339762535 
   bio: Co-founder Invoice Jet and Work Life
-  image: ks.png
+  image: sathish.png
+
 ---
 It all started some time after [jan 28 2011][1], I was following techcrunch on twitter then. After seeing a tweet about svangel and yuri milner&#8217;s investment in ycombinator companies, I thought ycombinator was some startup working on some hot trendy technology. But, the title doesn&#8217;t make a lot of sense, so I read the article and looked at ycombinator website. It was an aha moment. It was not a startup (in some way it is), but a hub for startups.
 

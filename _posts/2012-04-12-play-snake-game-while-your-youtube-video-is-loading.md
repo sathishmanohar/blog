@@ -13,7 +13,8 @@ author:
   name: Sathish
   twitter: sathishmanohar
   bio: Co-founder Invoice Jet and Work Life
-  image: ks.png
+  image: sathish.png
+
 ---
 I was browsing through youtube today, suddenly my connection got cut off. I was starring at the loading animation. and naively pressed up arrow in the keyboard (click on the player, before pressing up arrow). I&#8217;m not bored anymore. Do it for yourself.
 
