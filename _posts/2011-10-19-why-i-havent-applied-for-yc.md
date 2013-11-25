@@ -3,7 +3,6 @@ layout: post
 
 title: 'Why I haven&#8217;t applied for YC'
 permalink: /why-i-havent-applied-for-yc/
-cover_image: blog-cover.jpg
 
 excerpt: "My excitement about Ycombinator and turn of events before and after my application"
 
