@@ -4,7 +4,7 @@ layout: post
 title: play snakes while your youtube video is loading
 permalink: /play-snake-game-while-your-youtube-video-is-loading/
 
-excerpt: "Incorporated provides a great typography, responsive design, author details, semantic markup and more."
+excerpt: "Turn Youtube flash video player buffer spinner into snake game"
 
 categories:
   - Random

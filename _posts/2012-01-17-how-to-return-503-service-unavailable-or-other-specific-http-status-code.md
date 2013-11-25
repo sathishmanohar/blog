@@ -4,7 +4,7 @@ layout: post
 title: How to Return 503 Service Unavailable or other specific HTTP Status Code
 permalink: /how-to-return-503-service-unavailable-or-other-specific-http-status-code/
 
-excerpt: "Incorporated provides a great typography, responsive design, author details, semantic markup and more."
+excerpt: "With code excerpts for apache configuration and rails"
 
 categories:
   - Technology

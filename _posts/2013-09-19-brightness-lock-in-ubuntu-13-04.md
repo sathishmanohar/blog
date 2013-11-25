@@ -4,7 +4,7 @@ layout: post
 title: Brightness Lock in Ubuntu 13.04
 permalink: /brightness-lock-in-ubuntu-13-04/
 
-excerpt: "Incorporated provides a great typography, responsive design, author details, semantic markup and more."
+excerpt: "Screen brightness changes in ubuntu are annoying because it gets reset on every boot and sometimes randomly when resuming from idle, Here is how I fix it for myself"
 
 categories:
   - How To
