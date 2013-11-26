@@ -22,8 +22,6 @@ Only when I use the Fn + brightness keys in the keyboard, the brightness keeps r
 
 Here the setting I use in 13.04
 
-[<img class="alignnone size-full wp-image-239" title="ubuntu-brightness-lock" src="http://sathishmanohar.com/wp-content/uploads/2013/09/ubuntu-brightness-lock.png" alt="" width="500" />][1]
+<div class="full zoomable"><img src="/images/ubuntu-brightness-lock.png"></div>
 
 Hope it helps!
-
- [1]: http://sathishmanohar.com/wp-content/uploads/2013/09/ubuntu-brightness-lock.png

@@ -21,8 +21,6 @@ It all started some time after [jan 28 2011][1], I was following techcrunch on t
 
 It changed lot of my misconceptions. I knew about the valley and its the heart of technology. But, I thought its hard for foreign nationals to start companies in the valley. I was proven wrong in ycombinator FAQ. So, I decided to apply.
 
-<!--more-->
-
 ### Excitement
 
 I came to know about ycombinator by end of January 2011, application deadline was so close, and YC clearly states, early applications has significant advantage. So, I had to choose between one of my plans.
@@ -33,13 +31,13 @@ I chose the biggest (most toughest to execute), because, YC encouraged to act on
 
 I applied, then I started worrying about other things, like visa, what if I get accepted? will I get visa? What visa should I apply for? I knew nobody near valley at that time. I was freaking out.
 
-[<img src="http://sathishmanohar.com/wp-content/uploads/2011/10/tweet_about_visa-300x104.png" alt="" title="tweet_about_visa" width="300" height="104" class="alignnone size-medium wp-image-61" />][2]
+<div class="full"><img src="/images/tweet_about_visa.png"></div>
 
 ### Rejection
 
 Then the day came, I was rejected. Since, It all happened so fast, I got some time to think, after rejection. I&#8217;ll list what I did, what I have done wrong, and how am I correcting myself.
 
-[<img src="http://sathishmanohar.com/wp-content/uploads/2011/10/tweet_about_rejection-300x106.png" alt="" title="tweet_about_rejection" width="300" height="106" class="alignnone size-medium wp-image-70" />][3]
+<div class="full"><img src="/images/tweet_about_rejection.png"></div>
 
 ### Product Problem
 
@@ -74,5 +72,3 @@ So, This is my reason for not applying for current batch of YC. Now, I have a fr
 What do you think of this decision? Is it good? or is it a mistake? I&#8217;ll be glad to hear from you all.
 
  [1]: http://techcrunch.com/2011/01/28/yuri-milner-sv-angel-offer-every-new-y-combinator-startup-150k/
- [2]: http://sathishmanohar.com/wp-content/uploads/2011/10/tweet_about_visa.png
- [3]: http://sathishmanohar.com/wp-content/uploads/2011/10/tweet_about_rejection.png

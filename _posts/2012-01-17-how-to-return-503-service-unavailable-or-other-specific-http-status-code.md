@@ -20,8 +20,6 @@ Recently major websites like reddit and wikipedia, decided to go black in protes
 
 So, Here are the various ways to return 503 status code. You can always customize these, to any other HTTP status, as you see fit.
 
-<!--more-->
-
 ### PHP
 
 You can set custom headers with PHP. Just include() this piece of code in the top of the pages, you want to blackout.
