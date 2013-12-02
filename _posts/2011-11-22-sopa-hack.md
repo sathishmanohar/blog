@@ -12,7 +12,6 @@ categories:
 author: 
   name: Sathish
   twitter: sathishmanohar
-  gplus: 100687498195339762535 
   bio: Co-founder Invoice Jet and Work Life
   image: sathish.png
 
