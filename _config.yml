@@ -3,7 +3,7 @@ inc:
   title:        "Sathish Manohar"
   subtitle:     "Web Designer / Web Developer from Chennai India"
   cover_image:  blog-cover.jpg
-  # logo:         logo.png
+  logo:         logo.png
   
   # Company information
   company:      Sathish Manohar
