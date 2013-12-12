@@ -17,7 +17,8 @@ author:
 
 ---
 
-[Docker] [1] is an open-source engine that automates the deployment of any application as a lightweight, portable, self-sufficient container that will run virtually anywhere.
+> [Docker] [1] is an open-source engine that automates the deployment of any application as a lightweight, portable, self-sufficient container that will run virtually anywhere.
+from: [Docker Learn More] [2]
 
 Yea. But what is docker you ask? Let me try.
 
@@ -55,3 +56,4 @@ Most cloud hosting companies bill customers by the hour (even if you kill the in
 Up until now, developers are required to maintain different development and production environments. This inconsistency inevitably leads to issues. Docker promises to eliminate this situation by making it possible to develop on the same container that will be deployed in production, which will make development a lot easier and deployment lot less painful.
 
 [1]: http://www.docker.io/ "Docker Official Website"
+[2]: http://www.docker.io/learn_more/ "Docker Learn More"
