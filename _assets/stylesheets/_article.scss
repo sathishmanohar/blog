@@ -8,13 +8,47 @@ article {
     }
 
     .social {
-        height:40px;
         padding:10px 0;
+        border-top: 1px solid #aaa;
+        p { text-align: center; }
         
         > div {
             display:inline-block;
             min-width:120px;
         }
+    }
+
+    .tip {
+        padding:10px 0;
+        border-bottom: 1px solid #aaa;
+        p { text-align: center; }
+
+        > div {
+            display:inline-block;
+            min-width:120px;
+        }
+
+        // For the or seperation
+        fieldset.tip-title {
+            border-top: 1px solid #ddd;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            display: block;
+            height: 2em;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        fieldset.tip-title legend {
+            color: #bdbdbd;
+            border: none;
+            display: inline;
+            font-size: 1em;
+            padding: 5px 10px;
+            width: auto;
+        }
+        // End or seperation
     }
 
     .container > footer {
