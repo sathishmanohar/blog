@@ -19,13 +19,33 @@ article {
     }
 
     .tip {
-        padding:10px 0;
+        padding:10px 0 40px;
         border-bottom: 1px solid #aaa;
         p { text-align: center; }
 
         > div {
+            background-repeat: no-repeat;
             display:inline-block;
-            min-width:120px;
+            min-width:125px;
+            > a {
+                padding-left: 30px;
+            }
+        }
+
+        div.bitcoin {
+            background-image: url(/images/bitcoin25px.png);
+        }
+
+        div.litecoin {
+            background-image: url(/images/litecoin25px.png);
+        }
+
+        div.namecoin {
+            background-image: url(/images/namecoin25px.png);
+        }
+
+        div.dogecoin {
+            background-image: url(/images/dogecoin25px.png);
         }
 
         // For the or seperation
@@ -48,11 +68,14 @@ article {
             padding: 5px 10px;
             width: auto;
         }
+
+        fieldset {
+            margin: 0 0 0.4em;
+        }
         // End or seperation
     }
 
     .container > footer {
-        border-top:1px solid #ddd;
         border-bottom:1px solid #ddd;
         padding-top:1.5em;
         padding-bottom:1.5em;
