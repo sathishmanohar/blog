@@ -9,6 +9,11 @@ excerpt: "With code excerpts for apache configuration and rails"
 categories:
   - Technology
 
+bicoin: 
+litecoin: LL6M1Dyr9ctyHqiz6EpoiL82ycy2Nobypb
+namecoin: 
+dogecoin: 
+
 author: 
   name: Sathish
   twitter: sathishmanohar

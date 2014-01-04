@@ -9,6 +9,11 @@ excerpt: "Screen brightness changes in ubuntu are annoying because it gets reset
 categories:
   - How To
 
+bicoin: 
+litecoin: LWLBu5srzq7PQymeeg6TuG31rvmRX3ZvZr
+namecoin: 
+dogecoin: 
+
 author: 
   name: Sathish
   twitter: sathishmanohar

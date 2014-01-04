@@ -9,6 +9,11 @@ excerpt: "I think we are missing an essential spec for web content"
 categories:
   - Thoughts
 
+bicoin: 
+litecoin: LTJUBf3mxmipyijUvdLxagMDxEeykjv9MK
+namecoin: 
+dogecoin: 
+
 author: 
   name: Sathish
   twitter: sathishmanohar
