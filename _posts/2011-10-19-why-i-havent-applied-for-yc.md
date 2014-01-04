@@ -11,7 +11,7 @@ categories:
 
 bicoin: 19voUv8bjfiHDLRMpJ7SbKGCtgMhNCEHmM
 litecoin: LSiAK4ks2ahGBYf9mpSzMnS2mqPyukhePt
-namecoin: 
+namecoin: NDz4nbiM3PqZAkuVgMaXamazBaMmiK3TXw
 dogecoin: DGYazHuJk9nPABFLViNCjWxmTC7BH6S7mE
 
 author: 
