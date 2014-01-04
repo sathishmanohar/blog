@@ -9,7 +9,7 @@ excerpt: "I think we are missing an essential spec for web content"
 categories:
   - Thoughts
 
-bicoin: 19nBdjkMLXabJ6TEHoPdxTaxLFGeosaExy
+bitcoin: 19nBdjkMLXabJ6TEHoPdxTaxLFGeosaExy
 litecoin: LTJUBf3mxmipyijUvdLxagMDxEeykjv9MK
 namecoin: MyNy8jpfKEbSzS4NSUTxcHqyTzRniLxqri
 dogecoin: DURDybsg4rHT1LBH6QBjE7XogTXjq6sWet

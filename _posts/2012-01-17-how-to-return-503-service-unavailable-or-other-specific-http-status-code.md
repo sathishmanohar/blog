@@ -9,7 +9,7 @@ excerpt: "With code excerpts for apache configuration and rails"
 categories:
   - Technology
 
-bicoin: 1PGVCRBrEKtYZjM5EAP9muZ9m2fxjYq3b5
+bitcoin: 1PGVCRBrEKtYZjM5EAP9muZ9m2fxjYq3b5
 litecoin: LL6M1Dyr9ctyHqiz6EpoiL82ycy2Nobypb
 namecoin: NEzKzP3SXjr8Wa9UW9r5G86ue8eX14RujR
 dogecoin: DFrTTAsgGYKmemyVpskFqD8zhiuRfM1Zh9
