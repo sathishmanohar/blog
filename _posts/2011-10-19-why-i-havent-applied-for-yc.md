@@ -9,10 +9,10 @@ excerpt: "My excitement about Ycombinator and turn of events before and after my
 categories:
   - Experiences
 
-bicoin: 
+bicoin: 19voUv8bjfiHDLRMpJ7SbKGCtgMhNCEHmM
 litecoin: LSiAK4ks2ahGBYf9mpSzMnS2mqPyukhePt
 namecoin: 
-dogecoin: 
+dogecoin: DGYazHuJk9nPABFLViNCjWxmTC7BH6S7mE
 
 author: 
   name: Sathish
