@@ -6,15 +6,75 @@
   <p>Support with coins</p>
 
   <div class="bitcoin">
-    <a href="#">Bitcoin</a>
+    <a href="#bitcoin" rel="leanModal">Bitcoin</a>
   </div>
   <div class="litecoin">
-    <a href="#">Litecoin</a>
+    <a href="#litecoin" rel="leanModal">Litecoin</a>
   </div>
   <div class="namecoin">
-    <a href="#">Namecoin</a>
+    <a href="#namecoin" rel="leanModal">Namecoin</a>
   </div>
   <div class="dogecoin">
-    <a href="#">Such Doge</a>
+    <a href="#dogecoin" rel="leanModal">Such Doge</a>
   </div>
 </div>
+
+<div id="bitcoin" class="tip-display">
+  <form action="#" method="post" accept-charset="utf-8">
+    <input type="text" value="fadfapfiadfpaoifaoijfao" size="45" readonly />
+  </form>
+  <a href="#" class="modal_close">close</a>
+</div>
+
+<div id="litecoin" class="tip-display">
+  <form action="#" method="post" accept-charset="utf-8">
+    <input type="text" value="fadfapfiadfpaoifaoijfao" size="45" readonly />
+  </form>
+  <a href="#" class="modal_close">close</a>
+</div>
+
+<div id="namecoin" class="tip-display">
+  <form action="#" method="post" accept-charset="utf-8">
+    <input type="text" value="fadfapfiadfpaoifaoijfao" size="45" readonly />
+  </form>
+  <a href="#" class="modal_close">close</a>
+</div>
+
+<div id="dogecoin" class="tip-display">
+  <form action="#" method="post" accept-charset="utf-8">
+    <input type="text" value="fadfapfiadfpaoifaoijfao" size="45" readonly />
+  </form>
+  <a href="#" class="modal_close">close</a>
+</div>
+
+<style type="text/css" media="all">
+  #lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+  }
+
+  .tip-display {
+    background: #fff;
+    border-radius: 5px;
+    display: none;
+    padding: 20px;
+    max-width: 820px;
+    width: 40%;
+  }
+  .modal_close {
+    background: url('/images/modal-close.png');
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 20px;
+    height: 20px;
+    text-indent: -200px;
+    overflow: hidden;
+  }
+</style>
