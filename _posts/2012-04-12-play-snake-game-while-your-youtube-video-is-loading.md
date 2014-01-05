@@ -9,6 +9,11 @@ excerpt: "Turn Youtube flash video player buffer spinner into snake game"
 categories:
   - Random
 
+bitcoin: 1Ja34g8AA4ULMFTFnf3GQoXY8rG3p5qYEu
+litecoin: LWj8zghHuL8B6PJ1VsND2y53Cy8V7VXePM
+namecoin: N1cum7aT9vo3iRndce4uJ3mrwe7FNiWSEL
+dogecoin: DRYETPMPwi82qx1oFL59Rx8rXSS6FwjMrN
+
 author: 
   name: Sathish
   twitter: sathishmanohar

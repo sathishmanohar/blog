@@ -9,6 +9,11 @@ excerpt: "Docker has excited may developers, devops and hosting providers, I sha
 categories:
   - Thoughts
 
+bitcoin: 1EYqFucUiTJPmjrRhFTQxRj84MhRZ9s3Bw
+litecoin: LfEo2hMfKHK5HPdm3QoeGxDyNqrbEJL5Dv
+namecoin: NEN5AJAagvLEpW8RY6s4fYZYkSBQE9CEXA
+dogecoin: DPPjPdajmqoHx3Wq28z5VuchE1PEaAMj9d
+
 author: 
   name: Sathish
   twitter: sathishmanohar
