@@ -32,9 +32,7 @@ inc:
   
  # Analytics     
   analytics:
-    google: 
-      # eg. 'UA-123-12'
-      id:       UA-9223412-7
+    google: true
       
       
   # Google Fonts
