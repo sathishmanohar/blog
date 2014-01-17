@@ -10,15 +10,6 @@ categories:
   - How To
 
 bitcoin: 1LQCMQkxkVz3m1uVeuXZRTW17eL4UfnzTc
-litecoin: LWLBu5srzq7PQymeeg6TuG31rvmRX3ZvZr
-namecoin: NDW2EJNvSu4i22s8CvGLEwqy7upefgcdoc
-dogecoin: DBvLmdhHja33hCw2QPt9avHPsxJT8sVi2w
-
-author: 
-  name: Sathish
-  twitter: sathishmanohar
-  bio: Co-founder Invoice Jet and Work Life
-  image: sathish.png
 
 ---
 Ever Since I Upgraded to Ubuntu 13.04, the Brightness lock doesn&#8217;t work, After every few seconds it keeps reverting back to highest brightness level. While, I haven&#8217;t figured out the perfect solution, I relatively less painful temporary fix.
@@ -30,3 +21,4 @@ Here the setting I use in 13.04
 <div class="full zoomable"><img src="/images/ubuntu-brightness-lock.png"></div>
 
 Hope it helps!
+

@@ -10,15 +10,6 @@ categories:
   - Experiences
 
 bitcoin: 19voUv8bjfiHDLRMpJ7SbKGCtgMhNCEHmM
-litecoin: LSiAK4ks2ahGBYf9mpSzMnS2mqPyukhePt
-namecoin: NDz4nbiM3PqZAkuVgMaXamazBaMmiK3TXw
-dogecoin: DGYazHuJk9nPABFLViNCjWxmTC7BH6S7mE
-
-author: 
-  name: Sathish
-  twitter: sathishmanohar
-  bio: Co-founder Invoice Jet and Work Life
-  image: sathish.png
 
 ---
 It all started some time after [jan 28 2011][1], I was following techcrunch on twitter then. After seeing a tweet about svangel and yuri milner&#8217;s investment in ycombinator companies, I thought ycombinator was some startup working on some hot trendy technology. But, the title doesn&#8217;t make a lot of sense, so I read the article and looked at ycombinator website. It was an aha moment. It was not a startup (in some way it is), but a hub for startups.
@@ -76,3 +67,4 @@ So, This is my reason for not applying for current batch of YC. Now, I have a fr
 What do you think of this decision? Is it good? or is it a mistake? I&#8217;ll be glad to hear from you all.
 
  [1]: http://techcrunch.com/2011/01/28/yuri-milner-sv-angel-offer-every-new-y-combinator-startup-150k/
+

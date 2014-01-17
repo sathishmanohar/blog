@@ -10,15 +10,6 @@ categories:
   - Thoughts
 
 bitcoin: 1EYqFucUiTJPmjrRhFTQxRj84MhRZ9s3Bw
-litecoin: LfEo2hMfKHK5HPdm3QoeGxDyNqrbEJL5Dv
-namecoin: NEN5AJAagvLEpW8RY6s4fYZYkSBQE9CEXA
-dogecoin: DPPjPdajmqoHx3Wq28z5VuchE1PEaAMj9d
-
-author: 
-  name: Sathish
-  twitter: sathishmanohar
-  bio: Co-founder Invoice Jet and Work Life
-  image: sathish.png
 
 ---
 
@@ -62,3 +53,4 @@ Up until now, developers are required to maintain different development and prod
 
 [1]: http://www.docker.io/ "Docker Official Website"
 [2]: http://www.docker.io/learn_more/ "Docker Learn More"
+

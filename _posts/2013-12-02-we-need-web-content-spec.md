@@ -10,15 +10,6 @@ categories:
   - Thoughts
 
 bitcoin: 19nBdjkMLXabJ6TEHoPdxTaxLFGeosaExy
-litecoin: LTJUBf3mxmipyijUvdLxagMDxEeykjv9MK
-namecoin: MyNy8jpfKEbSzS4NSUTxcHqyTzRniLxqri
-dogecoin: DURDybsg4rHT1LBH6QBjE7XogTXjq6sWet
-
-author: 
-  name: Sathish
-  twitter: sathishmanohar
-  bio: Co-founder Invoice Jet and Work Life
-  image: sathish.png
 
 ---
 Its been a pain for me choosing a work flow to write web content. Most of the content editors out there are word processors. Problem is word processors were designed a few decades before. The main use case for word processors is to make a digital document which at some point is outputted to a paper, Good old Paper. Word processors are fine for people, who are still involved in computer to paper work flow.
@@ -39,3 +30,4 @@ A spec like this will help a great deal for the development of text to HTML synt
 
 [1]: http://daringfireball.net/projects/markdown/	"MarkDown Project"
 [2]: http://www.codinghorror.com/blog/2012/10/the-future-of-markdown.html	"The Future of Markdown"
+

@@ -10,15 +10,6 @@ categories:
   - Technology
 
 bitcoin: 1PGVCRBrEKtYZjM5EAP9muZ9m2fxjYq3b5
-litecoin: LL6M1Dyr9ctyHqiz6EpoiL82ycy2Nobypb
-namecoin: NEzKzP3SXjr8Wa9UW9r5G86ue8eX14RujR
-dogecoin: DFrTTAsgGYKmemyVpskFqD8zhiuRfM1Zh9
-
-author: 
-  name: Sathish
-  twitter: sathishmanohar
-  bio: Co-founder Invoice Jet and Work Life
-  image: sathish.png
 
 ---
 Recently major websites like reddit and wikipedia, decided to go black in protest of SOPA. This is when a Googler joined the conversation and instructed sites to go black the right way. In short [Pierre Far][1] instructed sites to return &#8220;503 Service Unavailable&#8221; Status code, to show bots, that the website in question was taken down, intentionally and temporarily.
@@ -102,3 +93,4 @@ Thanks for Stack Overflow user, [iWasRobbed][3] For providing snippets for Rails
  [1]: https://plus.google.com/115984868678744352358/posts/Gas8vjZ5fmB
  [2]: http://css-tricks.com/snippets/htaccess/temporary-maintenance-using-mod_rewrite/
  [3]: http://stackoverflow.com/users/308315/iwasrobbed
+
