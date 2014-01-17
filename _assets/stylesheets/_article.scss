@@ -27,25 +27,21 @@ article {
             background-repeat: no-repeat;
             display:inline-block;
             min-width:125px;
-            > a {
-                padding-left: 30px;
-            }
         }
 
-        div.bitcoin {
-            background-image: url(/images/bitcoin25px.png);
+        form {
+            text-align: center;
         }
 
-        div.litecoin {
-            background-image: url(/images/litecoin25px.png);
+        form input {
+            border: solid 1px #d5d5d5;
+            font-size: 1em;
+            padding: 5px;
+            text-align: center;
         }
 
-        div.namecoin {
-            background-image: url(/images/namecoin25px.png);
-        }
-
-        div.dogecoin {
-            background-image: url(/images/dogecoin25px.png);
+        form input:focus {
+            border: solid 1px #2077b2;
         }
 
         // For the or seperation
@@ -303,3 +299,4 @@ article {
     }
 
 }
+
