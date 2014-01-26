@@ -10,11 +10,19 @@
     <form action="#" method="post" accept-charset="utf-8">
       <input type="text" value="{{ page.bitcoin }}" size="40" readonly />
     </form>
+    <div class="open-wallet-link">
+      <a href="bitcoin:{{ page.bitcoin }}?label=Sathish Manohar - {{ page.title }}&message=Sathish Manohar - {{ page.title }}">Open in wallet</a>
+    </div>
   </div>
 </div>
 
 
 <style type="text/css" media="all">
-
+  .open-wallet-link {
+    text-align: center;
+  }
+  .open-wallet-link {
+    font-size: 0.8em;
+  }
 </style>
 
