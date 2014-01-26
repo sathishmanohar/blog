@@ -9,12 +9,49 @@
     <p>Found this article interesting or useful? Tip me if you'd like in below address</p>
     <form action="#" method="post" accept-charset="utf-8">
       <input type="text" value="{{ page.bitcoin }}" size="40" readonly />
+      <a href="#" rel="leanModal"><img src="/images/qr-thumb.png" /></a>
     </form>
+    <div class="open-wallet-link">
+      <a href="bitcoin:{{ page.bitcoin }}?label={{ page.title }} by Sathish Manohar&message={{ page.title }} by Sathish Manohar">Open in wallet</a>
+    </div>
   </div>
 </div>
 
+<div id="lean_overlay">
+  <div class="qr-modal">
+    <div id="qrcode"></div>
+    <p class="address">{{ page.bitcoin }}</p>
+  </div>
+</div>
 
 <style type="text/css" media="all">
-
+  .open-wallet-link {
+    text-align: center;
+  }
+  .open-wallet-link {
+    font-size: 0.8em;
+    margin-top: -10px;
+  }
+  .qr-modal {
+    background-color: white;
+    margin: 30px auto;
+    height: 380px;
+    padding: 20px;
+    width: 300px;
+  }
+  .qr-modal p {
+    font-size: 0.8em;
+    margin-top: 20px;
+  }
+  #lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: rgba(0,0,0,0.9);
+    display: none;
+  }
 </style>
 
