@@ -1,6 +1,16 @@
 <!--leanModal invokation for tipcoins-->
 {% javascript jquery.leanModal.min.js  %}
+{% javascript jquery.qrcode-0.7.0.min.js  %}
 
 <script type="text/javascript" charset="utf-8">
-  $("a[rel*=leanModal]").leanModal({ top : 200, overlay : 0.6, closeButton: ".modal_close" });
+  // Generate QR Code
+  $('#qrcode').qrcode({
+      render: "image",
+      size: 256,
+      text: "{{ page.bitcoin }}"
+  });
+
+  // Display Lean Modal
+  $("a[rel*=leanModal]").leanModal({ top : 200, overlay : 1 });
 </script>
+
