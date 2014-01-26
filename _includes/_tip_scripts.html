@@ -12,5 +12,22 @@
 
   // Display Lean Modal
   $("a[rel*=leanModal]").leanModal({ top : 200, overlay : 1 });
+
+// Select BTC address on click
+$(function(){
+
+    jQuery.selectText('input:text');
+    jQuery.selectText('input:password');
+
+    });
+
+jQuery.extend( {
+selectText: function(s) {
+$(s).live('focus',function() {
+    var self = $(this);
+    setTimeout(function() {self.select();}, 0);
+    });
+  }
+});
 </script>
 
