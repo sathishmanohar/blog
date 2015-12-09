@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Return 503 Service Unavailable or other specific HTTP Status Code &mdash; Sathish Manohar</title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/logo.png"/>
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="Sathish Manohar" />
+    <meta name="title" content="How to Return 503 Service Unavailable or other specific HTTP Status Code ">
+    <link rel="canonical" href="http://sathishmanohar.com/how-to-return-503-service-unavailable-or-other-specific-http-status-code/">
+     
+           
+    <meta property="og:title" content="How to Return 503 Service Unavailable or other specific HTTP Status Code "/>
+    <meta property="og:url" content="http://sathishmanohar.com/how-to-return-503-service-unavailable-or-other-specific-http-status-code/"/>
+    
+    
+    <meta property="og:description" content="With code excerpts for apache configuration and rails"/>
+    <meta name="description" content="With code excerpts for apache configuration and rails"/>
+    
+    <meta property="og:site_name" content="Sathish Manohar">     
+</head>
+<body>
+    
+<section class="site-nav">
+    <header>
+        <nav id="navigation">
+             <a class="brand" href="/">
+                <img src="/images/logo.png" alt="Inc">
+              </a>
+            <a href="/" class="home">Blog</a>
+            
+            <a href="http://sathishmanohar.com/about/">About</a>
+        </nav>
+        
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                By <address><a rel="author" href="https://twitter.com/sathishmanohar" title="Sathish Manohar" target="_blank">Sathish Manohar</a> &mdash;
+                <time pubdate datetime="2012-17-January" title="January 17, 2012">January 17, 2012</time>
+            </div>
+            <h1 class="title">How to Return 503 Service Unavailable or other specific HTTP Status Code</h1>
+            
+        </header>
+
+        <section>
+            <p>Recently major websites like reddit and wikipedia, decided to go black in protest of SOPA. This is when a Googler joined the conversation and instructed sites to go black the right way. In short <a href="https://plus.google.com/115984868678744352358/posts/Gas8vjZ5fmB">Pierre Far</a> instructed sites to return “503 Service Unavailable” Status code, to show bots, that the website in question was taken down, intentionally and temporarily.</p>
+
+<p>So, Here are the various ways to return 503 status code. You can always customize these, to any other HTTP status, as you see fit.</p>
+
+<h3 id="php">PHP</h3>
+
+<p>You can set custom headers with PHP. Just include() this piece of code in the top of the pages, you want to blackout.</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php">&lt;?php
+header(&quot;HTTP/1.0 503 Service Unavailable&quot;);
+?&gt;</code></pre></div>
+
+<h3 id="plan-html-websites">Plan HTML Websites</h3>
+
+<p>To return specific HTTP Status codes in a Plain HTML Site, You can edit web server config. Include the Following snippet in .htaccess file in apache to achieve the same.</p>
+
+<div class="highlight"><pre><code class="language-apacheconf" data-lang="apacheconf">&lt;pre class=&quot;wp-code-highlight prettyprint&quot;&gt;# Don&#39;t forget to turn on the rewrite engine
+RewriteEngine on
+
+# Maintenance Redirection
+# Replace 555\.555\.555\.555 with your own IP address
+# Uncomment first conditional to turn off the redirection
+# RewriteCond %{REQUEST_URI} ^$a
+# RewriteCond %{REMOTE_ADDR} !^555\.555\.555\.555$
+# RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1$
+
+# Here strike.html is the custom page, thats displayed
+RewriteCond %{REQUEST_URI} !strike.html
+# strike_files/ directory contains supporting files for strike.html
+RewriteCond %{REQUEST_URI} !^/strike_files/
+
+# Uncomment the below line, if you want to serve styles/ images/
+# RewriteCond %{REQUEST_FILENAME} !(styles|images).+$
+
+RewriteRule (.*) /strike.html [R=503,L]
+ErrorDocument 503 /strike.html
+&lt;/pre&gt;</code></pre></div>
+
+<p>For More Explanation about the code, visit <a href="http://css-tricks.com/snippets/htaccess/temporary-maintenance-using-mod_rewrite/">css-tricks</a></p>
+
+<h3 id="ruby-on-rails">Ruby On Rails</h3>
+
+<p>If you are Running a Ruby on Rails, Application. You can use the following snippets to set return specific HTML status codes.</p>
+
+<p>For the entire application:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"># ApplicationController
+before_filter :return_unavailable_status
+
+private
+def return_unavailable_status
+render :nothing =&gt; true, :status =&gt; :service_unavailable
+end</code></pre></div>
+
+<p>If you wanted a custom error page, you could do:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby">render &#39;custom_unavailable_page&#39;, :status =&gt; :service_unavailable</code></pre></div>
+
+<p>If you don’t want it for specific controllers:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"># SomeController, where you don&#39;t want to display
+# custom unavailable page
+skip_before_filter :return_unavailable_status</code></pre></div>
+
+<p>Hope this Helps! <img src="http://sathishmanohar.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> </p>
+
+<p>Thanks for Stack Overflow user, <a href="http://stackoverflow.com/users/308315/iwasrobbed">iWasRobbed</a> For providing snippets for Rails Version.</p>
+
+
+            
+<div class="social">
+    <p>Share with your friends and followers</p>
+    <div>
+        <a href="https://twitter.com/share" class="twitter-share-button"  data-text="How to Return 503 Service Unavailable or other specific HTTP Status Code" data-related="sathishmanohar">Tweet</a>
+    </div>
+    
+    
+    <div>
+        <div class="fb-like" data-width="150" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
+    </div>
+    
+    
+    <div>
+        <div class="g-plusone" data-size="medium"></div>
+    </div>
+    
+    
+    
+    <div>
+        <a href="http://news.ycombinator.com/submit" class="hn-share-button">Vote on HN</a>
+    </div>
+    
+</div>
+
+            <div class="tip">
+  <fieldset class="tip-title">
+        <legend>or</legend>
+  </fieldset>
+
+  <p>Support with Bitcoin</p>
+
+  <div class="bitcoin">
+    <p>Found this article interesting or useful? Tip me if you'd like in below address</p>
+    <form action="#" method="post" accept-charset="utf-8">
+      <input type="text" value="1PGVCRBrEKtYZjM5EAP9muZ9m2fxjYq3b5" size="40" readonly />
+      <a href="#" rel="leanModal"><img src="/images/qr-thumb.png" /></a>
+    </form>
+  </div>
+</div>
+
+<div id="lean_overlay">
+  <div class="qr-modal">
+    <div id="qrcode"></div>
+    <p class="address">1PGVCRBrEKtYZjM5EAP9muZ9m2fxjYq3b5</p>
+  </div>
+</div>
+
+<style type="text/css" media="all">
+  .open-wallet-link {
+    text-align: center;
+  }
+  .open-wallet-link {
+    font-size: 0.8em;
+    margin-top: -10px;
+  }
+  .qr-modal {
+    background-color: white;
+    margin: 30px auto;
+    height: 380px;
+    padding: 20px;
+    width: 300px;
+  }
+  .qr-modal p {
+    font-size: 0.8em;
+    margin-top: 20px;
+  }
+  #lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: rgba(0,0,0,0.9);
+    display: none;
+  }
+</style>
+
+
+        </section>
+
+        <footer>
+            <address>
+               <img src="/images/sathish.png">
+                <p>Written by <strong><a rel="author" href="https://twitter.com/sathishmanohar" title="Sathish Manohar" target="_blank">Sathish</a></strong><br>
+                <span class="muted">Co-Founder Invoice Jet and Work Life</span>
+                </p>
+            </address>
+
+        </footer>
+
+        
+        <section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'sathishmanohar'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2015 
+        
+        <nav>
+            <a href="http://sathishmanohar.com/">Sathish Manohar</a> &middot;
+            <a href="/">Blog</a> &middot;
+            
+            <a href="http://sathishmanohar.com/about/">About</a>
+        </nav>
+        
+        <nav class="social">
+            
+            <a href="https://twitter.com/sathishmanohar" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+                
+            <a href="/feed.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+        <p>Incorporated theme by <a href="https://sendtoinc.com">Inc</a></p>
+        <p> Cover Image by <a href="http://www.flickr.com/photos/literarychica/" target="_blank">literarychica</a> </p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="/assets/main.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=253595308025739";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script>
+    (function(d, t) {
+        var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        g.src = '//hnbutton.appspot.com/static/hn.min.js';
+        s.parentNode.insertBefore(g, s);
+    }(document, 'script'));
+</script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9223412-7', 'sathishmanohar.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<!--leanModal invokation for tipcoins-->
+<script src="/assets/jquery.leanModal.min.js"></script>
+<script src="/assets/jquery.qrcode-0.7.0.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+  // Generate QR Code
+  $('#qrcode').qrcode({
+      render: "image",
+      size: 256,
+      text: "1PGVCRBrEKtYZjM5EAP9muZ9m2fxjYq3b5"
+  });
+
+  // Display Lean Modal
+  $("a[rel*=leanModal]").leanModal({ top : 200, overlay : 1 });
+
+// Select BTC address on click
+$(function(){
+
+    jQuery.selectText('input:text');
+    jQuery.selectText('input:password');
+
+    });
+
+jQuery.extend( {
+selectText: function(s) {
+$(s).live('focus',function() {
+    var self = $(this);
+    setTimeout(function() {self.select();}, 0);
+    });
+  }
+});
+</script>
+
+
+
+</body>
+</html>
